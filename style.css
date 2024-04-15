@@ -1,0 +1,79 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define as linhas para cabeçalho, conteúdo e rodapé */
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da tela */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    grid-row: 1; /* Coloca o cabeçalho na primeira linha */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Alterei a cor do hover para um tom de amarelo */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
+    grid-row: 2; /* Coloca o conteúdo na segunda linha */
+    margin: 0 auto;
+}
+
+section {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+
+section{
+    height: 200px;
+    width: 80%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    grid-row: 3; /* Coloca o rodapé na terceira linha */
+}
